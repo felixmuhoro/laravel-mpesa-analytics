@@ -1,7 +1,14 @@
 {
     "name": "felixmuhoro/laravel-mpesa-analytics",
     "description": "Analytics, reporting and insights for M-Pesa transactions in Laravel",
-    "keywords": ["laravel", "mpesa", "kenya", "safaricom", "analytics", "reporting"],
+    "keywords": [
+        "laravel",
+        "mpesa",
+        "kenya",
+        "safaricom",
+        "analytics",
+        "reporting"
+    ],
     "homepage": "https://github.com/felixmuhoro/laravel-mpesa-analytics",
     "license": "MIT",
     "type": "library",
