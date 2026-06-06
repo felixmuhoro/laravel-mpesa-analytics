@@ -27,21 +27,21 @@
     },
     "autoload": {
         "psr-4": {
-            "FelixMuhoro\MpesaAnalytics\\": "src/"
+            "FelixMuhoro\\MpesaAnalytics\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FelixMuhoro\MpesaAnalytics\Tests\\": "tests/"
+            "FelixMuhoro\\MpesaAnalytics\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FelixMuhoro\MpesaAnalytics\MpesaAnalyticsServiceProvider"
+                "FelixMuhoro\\MpesaAnalytics\\MpesaAnalyticsServiceProvider"
             ],
             "aliases": {
-                "MpesaAnalytics": "FelixMuhoro\MpesaAnalytics\Facades\Analytics"
+                "MpesaAnalytics": "FelixMuhoro\\MpesaAnalytics\\Facades\\Analytics"
             }
         }
     },
