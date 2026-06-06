@@ -1,12 +1,7 @@
 {
     "name": "felixmuhoro/laravel-mpesa-analytics",
-    "description": "M-Pesa transaction analytics for Laravel",
-    "keywords": [
-        "laravel",
-        "mpesa",
-        "kenya",
-        "safaricom"
-    ],
+    "description": "Analytics, reporting and insights for M-Pesa transactions in Laravel",
+    "keywords": ["laravel", "mpesa", "kenya", "safaricom", "analytics", "reporting"],
     "homepage": "https://github.com/felixmuhoro/laravel-mpesa-analytics",
     "license": "MIT",
     "type": "library",
@@ -20,11 +15,34 @@
     "require": {
         "php": "^8.1",
         "felixmuhoro/laravel-mpesa": "^1.2",
-        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/events": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
-            "FelixMuhoro\\": "src/"
+            "FelixMuhoro\MpesaAnalytics\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FelixMuhoro\MpesaAnalytics\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FelixMuhoro\MpesaAnalytics\MpesaAnalyticsServiceProvider"
+            ],
+            "aliases": {
+                "MpesaAnalytics": "FelixMuhoro\MpesaAnalytics\Facades\Analytics"
+            }
         }
     },
     "minimum-stability": "stable",
